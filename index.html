@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SARVESH KUMAR - CYBERSEC ANALYST :: ACCESS TERMINAL</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Boot Sequence Overlay -->
+    <div id="boot-sequence" class="boot-sequence">
+        <div class="boot-content">
+            <div class="boot-logo">
+                <div class="ascii-art">
+                    <pre id="ascii-logo">
+╔═══════════════════════════════════════╗
+║    CYBERSEC ANALYST WORKSTATION      ║
+║           ACCESS TERMINAL             ║
+╚═══════════════════════════════════════╝
+                    </pre>
+                </div>
+            </div>
+            <div class="boot-messages">
+                <div class="boot-line"><span class="boot-prompt">[SYSTEM]</span> Initializing secure connection...</div>
+                <div class="boot-line"><span class="boot-prompt">[AUTH]</span> Verifying credentials...</div>
+                <div class="boot-line"><span class="boot-prompt">[FIREWALL]</span> Loading security protocols...</div>
+                <div class="boot-line"><span class="boot-prompt">[OSINT]</span> Connecting to intelligence networks...</div>
+                <div class="boot-line"><span class="boot-prompt">[STATUS]</span> <span class="status-ok">ACCESS GRANTED</span></div>
+            </div>
+            <div class="boot-progress">
+                <div class="progress-bar">
+                    <div class="progress-fill"></div>
+                </div>
+                <div class="progress-text">Loading Sarvesh Kumar's security workstation...</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Dashboard -->
+    <div id="main-dashboard" class="main-dashboard">
+        <!-- Header Status Bar -->
+        <header class="status-bar">
+            <div class="status-left">
+                <div class="status-item">
+                    <div class="led-indicator active"></div>
+                    <span>SYSTEM: ONLINE</span>
+                </div>
+                <div class="status-item">
+                    <div class="led-indicator warning"></div>
+                    <span>THREAT LEVEL: <span class="threat-level">GREEN</span></span>
+                </div>
+                <div class="status-item">
+                    <div class="led-indicator active"></div>
+                    <span>UPTIME: <span id="uptime">99.9%</span></span>
+                </div>
+            </div>
+            <div class="status-center">
+                <div class="system-title">SARVESH KUMAR - SECURITY ANALYST WORKSTATION</div>
+                <div class="system-location">JAIPUR, INDIA :: SECURITY-CLEARED</div>
+            </div>
+            <div class="status-right">
+                <div class="status-item">
+                    <div class="led-indicator active"></div>
+                    <span id="system-time"></span>
+                </div>
+                <div class="status-item">
+                    <span>IP: 192.168.1.42</span>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Grid Layout -->
+        <div class="dashboard-grid">
+            <!-- Left Panel - System Stats -->
+            <aside class="left-panel">
+                <div class="panel terminal">
+                    <div class="panel-header">
+                        <div class="window-controls">
+                            <div class="control close"></div>
+                            <div class="control minimize"></div>
+                            <div class="control maximize"></div>
+                        </div>
+                        <span class="panel-title">SYSTEM METRICS</span>
+                    </div>
+                    <div class="panel-content">
+                        <div class="metric-item">
+                            <span class="metric-label">THREATS_DETECTED:</span>
+                            <span class="metric-value" data-counter="100">000</span>
+                        </div>
+                        <div class="metric-item">
+                            <span class="metric-label">VULNS_FOUND:</span>
+                            <span class="metric-value" data-counter="50">000</span>
+                        </div>
+                        <div class="metric-item">
+                            <span class="metric-label">REPORTS_GEN:</span>
+                            <span class="metric-value" data-counter="10">000</span>
+                        </div>
+                        <div class="metric-item">
+                            <span class="metric-label">INCIDENTS_RESOLVED:</span>
+                            <span class="metric-value" data-counter="75">000</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quick Access Menu -->
+                <div class="panel terminal">
+                    <div class="panel-header">
+                        <div class="window-controls">
+                            <div class="control close"></div>
+                            <div class="control minimize"></div>
+                            <div class="control maximize"></div>
+                        </div>
+                        <span class="panel-title">QUICK ACCESS</span>
+                    </div>
+                    <div class="panel-content">
+                        <nav class="nav-menu">
+                            <a href="#profile" class="nav-item active" data-section="profile">
+                                <span class="nav-icon">&gt;</span>
+                                <span class="nav-text">PROFILE.dat</span>
+                            </a>
+                            <a href="#operations" class="nav-item" data-section="operations">
+                                <span class="nav-icon">&gt;</span>
+                                <span class="nav-text">OPERATIONS.log</span>
+                            </a>
+                            <a href="#arsenal" class="nav-item" data-section="arsenal">
+                                <span class="nav-icon">&gt;</span>
+                                <span class="nav-text">ARSENAL.sys</span>
+                            </a>
+                            <a href="#tools" class="nav-item" data-section="tools">
+                                <span class="nav-icon">&gt;</span>
+                                <span class="nav-text">TOOLS.exe</span>
+                            </a>
+                            <a href="#intel" class="nav-item" data-section="intel">
+                                <span class="nav-icon">&gt;</span>
+                                <span class="nav-text">INTEL.feed</span>
+                            </a>
+                            <a href="#contact" class="nav-item" data-section="contact">
+                                <span class="nav-icon">&gt;</span>
+                                <span class="nav-text">CONTACT.secure</span>
+                            </a>
+                        </nav>
+                    </div>
+                </div>
+            </aside>
+
+            <!-- Center Panel - Main Content -->
+            <main class="center-panel">
+                <!-- Profile Section -->
+                <section id="profile" class="content-section active">
+                    <div class="panel terminal">
+                        <div class="panel-header">
+                            <div class="window-controls">
+                                <div class="control close"></div>
+                                <div class="control minimize"></div>
+                                <div class="control maximize"></div>
+                            </div>
+                            <span class="panel-title">SECURITY CLEARANCE PROFILE</span>
+                        </div>
+                        <div class="panel-content">
+                            <div class="clearance-card">
+                                <div class="card-header">
+                                    <div class="clearance-level">SECURITY PROFESSIONAL</div>
+                                    <div class="classification">CYBERSEC-ANALYST</div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="profile-data">
+                                        <div class="data-row">
+                                            <span class="data-label">NAME:</span>
+                                            <span class="data-value">SARVESH KUMAR</span>
+                                        </div>
+                                        <div class="data-row">
+                                            <span class="data-label">SPECIALIZATION:</span>
+                                            <span class="data-value">OSINT | PENTEST | VAPT</span>
+                                        </div>
+                                        <div class="data-row">
+                                            <span class="data-label">LOCATION:</span>
+                                            <span class="data-value">JAIPUR, INDIA</span>
+                                        </div>
+                                        <div class="data-row">
+                                            <span class="data-label">STATUS:</span>
+                                            <span class="data-value status-active">ACTIVE</span>
+                                        </div>
+                                        <div class="data-row">
+                                            <span class="data-label">EDUCATION:</span>
+                                            <span class="data-value">BCA - POORNIMA UNIVERSITY</span>
+                                        </div>
+                                        <div class="data-row">
+                                            <span class="data-label">GPA:</span>
+                                            <span class="data-value">8.06/10</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-scanner">
+                                    <div class="scanner-line"></div>
+                                </div>
+                            </div>
+
+                            <!-- Security Clearances -->
+                            <div class="clearances-grid">
+                                <div class="clearance-badge">
+                                    <div class="badge-icon">🛡️</div>
+                                    <div class="badge-info">
+                                        <div class="badge-title">GOOGLE CYBERSECURITY</div>
+                                        <div class="badge-code">GCP-SEC-2024</div>
+                                    </div>
+                                    <div class="badge-status verified">VERIFIED</div>
+                                </div>
+                                <div class="clearance-badge">
+                                    <div class="badge-icon">☁️</div>
+                                    <div class="badge-info">
+                                        <div class="badge-title">AZURE DATA FUND.</div>
+                                        <div class="badge-code">AZ-900-2024</div>
+                                    </div>
+                                    <div class="badge-status verified">VERIFIED</div>
+                                </div>
+                                <div class="clearance-badge">
+                                    <div class="badge-icon">🤖</div>
+                                    <div class="badge-info">
+                                        <div class="badge-title">AZURE AI FUND.</div>
+                                        <div class="badge-code">AI-900-2024</div>
+                                    </div>
+                                    <div class="badge-status verified">VERIFIED</div>
+                                </div>
+                                <div class="clearance-badge">
+                                    <div class="badge-icon">🔐</div>
+                                    <div class="badge-info">
+                                        <div class="badge-title">NETWORK DEFENSE ESS.</div>
+                                        <div class="badge-code">NDE-2024-CERT</div>
+                                    </div>
+                                    <div class="badge-status verified">VERIFIED</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Operations Section -->
+                <section id="operations" class="content-section">
+                    <div class="panel terminal">
+                        <div class="panel-header">
+                            <div class="window-controls">
+                                <div class="control close"></div>
+                                <div class="control minimize"></div>
+                                <div class="control maximize"></div>
+                            </div>
+                            <span class="panel-title">SECURITY OPERATIONS LOG</span>
+                        </div>
+                        <div class="panel-content">
+                            <div class="log-entries">
+                                <div class="log-entry">
+                                    <div class="log-header">
+                                        <div class="case-id">CASE: OSINT-2024-001</div>
+                                        <div class="classification">CLASSIFICATION: REMOTE-OPS</div>
+                                        <div class="status completed">MISSION COMPLETED</div>
+                                    </div>
+                                    <div class="log-body">
+                                        <div class="operation-info">
+                                            <div class="info-row">
+                                                <span class="info-label">OPERATION:</span>
+                                                <span class="info-value">Intelligence Gathering Specialist</span>
+                                            </div>
+                                            <div class="info-row">
+                                                <span class="info-label">ORGANIZATION:</span>
+                                                <span class="info-value">Techonquer.org</span>
+                                            </div>
+                                            <div class="info-row">
+                                                <span class="info-label">TIMEFRAME:</span>
+                                                <span class="info-value">2024-06 to 2024-07</span>
+                                            </div>
+                                        </div>
+                                        <div class="objectives">
+                                            <div class="objective-item">
+                                                <span class="objective-status">✓</span>
+                                                <span class="objective-text">THREAT-INTEL: Identified 100+ security vulnerabilities using OSINT methodologies</span>
+                                            </div>
+                                            <div class="objective-item">
+                                                <span class="objective-status">✓</span>
+                                                <span class="objective-text">ACCURACY-BOOST: Improved threat detection systems by 20% efficiency rating</span>
+                                            </div>
+                                            <div class="objective-item">
+                                                <span class="objective-status">✓</span>
+                                                <span class="objective-text">REPORT-GEN: Produced 10+ comprehensive intelligence reports for stakeholders</span>
+                                            </div>
+                                            <div class="objective-item">
+                                                <span class="objective-status">✓</span>
+                                                <span class="objective-text">REMEDIATION: Enhanced incident response efficiency by 35% through actionable intelligence</span>
+                                            </div>
+                                        </div>
+                                        <div class="tools-deployed">
+                                            <span class="tools-label">TOOLS DEPLOYED:</span>
+                                            <div class="tool-tags">
+                                                <span class="tool-tag">OSINT Framework</span>
+                                                <span class="tool-tag">Maltego</span>
+                                                <span class="tool-tag">TheHarvester</span>
+                                                <span class="tool-tag">Shodan</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="log-entry">
+                                    <div class="log-header">
+                                        <div class="case-id">CASE: PENTEST-2023-002</div>
+                                        <div class="classification">CLASSIFICATION: REMOTE-OPS</div>
+                                        <div class="status completed">MISSION COMPLETED</div>
+                                    </div>
+                                    <div class="log-body">
+                                        <div class="operation-info">
+                                            <div class="info-row">
+                                                <span class="info-label">OPERATION:</span>
+                                                <span class="info-value">Offensive Security Specialist</span>
+                                            </div>
+                                            <div class="info-row">
+                                                <span class="info-label">ORGANIZATION:</span>
+                                                <span class="info-value">CyberRakshak.org</span>
+                                            </div>
+                                            <div class="info-row">
+                                                <span class="info-label">TIMEFRAME:</span>
+                                                <span class="info-value">2023-09 to 2024-04</span>
+                                            </div>
+                                        </div>
+                                        <div class="objectives">
+                                            <div class="objective-item">
+                                                <span class="objective-status">✓</span>
+                                                <span class="objective-text">VULN-ASSESS: Executed 10+ comprehensive vulnerability assessments</span>
+                                            </div>
+                                            <div class="objective-item">
+                                                <span class="objective-status">✓</span>
+                                                <span class="objective-text">BREACH-PREVENT: Reduced security breach potential by 30% through systematic testing</span>
+                                            </div>
+                                            <div class="objective-item">
+                                                <span class="objective-status">✓</span>
+                                                <span class="objective-text">PENTEST-OPS: Conducted 30+ penetration testing exercises across multiple environments</span>
+                                            </div>
+                                        </div>
+                                        <div class="tools-deployed">
+                                            <span class="tools-label">TOOLS DEPLOYED:</span>
+                                            <div class="tool-tags">
+                                                <span class="tool-tag">Metasploit Framework</span>
+                                                <span class="tool-tag">Burp Suite Professional</span>
+                                                <span class="tool-tag">Nmap</span>
+                                                <span class="tool-tag">Nessus</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Arsenal Section -->
+                <section id="arsenal" class="content-section">
+                    <div class="panel terminal">
+                        <div class="panel-header">
+                            <div class="window-controls">
+                                <div class="control close"></div>
+                                <div class="control minimize"></div>
+                                <div class="control maximize"></div>
+                            </div>
+                            <span class="panel-title">SECURITY ARSENAL :: OPERATIONAL STATUS</span>
+                        </div>
+                        <div class="panel-content">
+                            <div class="arsenal-grid">
+                                <div class="arsenal-category">
+                                    <div class="category-header">PROGRAMMING LANGUAGES</div>
+                                    <div class="skill-items">
+                                        <div class="skill-item">
+                                            <div class="skill-info">
+                                                <span class="skill-name">Python</span>
+                                                <span class="skill-status advanced">ADVANCED</span>
+                                            </div>
+                                            <div class="skill-bar">
+                                                <div class="skill-progress" data-width="85"></div>
+                                            </div>
+                                            <div class="skill-level">85%</div>
+                                        </div>
+                                        <div class="skill-item">
+                                            <div class="skill-info">
+                                                <span class="skill-name">Bash/Shell</span>
+                                                <span class="skill-status proficient">PROFICIENT</span>
+                                            </div>
+                                            <div class="skill-bar">
+                                                <div class="skill-progress" data-width="75"></div>
+                                            </div>
+                                            <div class="skill-level">75%</div>
+                                        </div>
+                                        <div class="skill-item">
+                                            <div class="skill-info">
+                                                <span class="skill-name">SQL</span>
+                                                <span class="skill-status proficient">PROFICIENT</span>
+                                            </div>
+                                            <div class="skill-bar">
+                                                <div class="skill-progress" data-width="70"></div>
+                                            </div>
+                                            <div class="skill-level">70%</div>
+                                        </div>
+                                        <div class="skill-item">
+                                            <div class="skill-info">
+                                                <span class="skill-name">JavaScript</span>
+                                                <span class="skill-status intermediate">INTERMEDIATE</span>
+                                            </div>
+                                            <div class="skill-bar">
+                                                <div class="skill-progress" data-width="65"></div>
+                                            </div>
+                                            <div class="skill-level">65%</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="arsenal-category">
+                                    <div class="category-header">SECURITY TOOLS</div>
+                                    <div class="skill-items">
+                                        <div class="skill-item">
+                                            <div class="skill-info">
+                                                <span class="skill-name">Nmap</span>
+                                                <span class="skill-status expert">EXPERT</span>
+                                            </div>
+                                            <div class="skill-bar">
+                                                <div class="skill-progress" data-width="90"></div>
+                                            </div>
+                                            <div class="skill-level">90%</div>
+                                        </div>
+                                        <div class="skill-item">
+                                            <div class="skill-info">
+                                                <span class="skill-name">Burp Suite</span>
+                                                <span class="skill-status advanced">ADVANCED</span>
+                                            </div>
+                                            <div class="skill-bar">
+                                                <div class="skill-progress" data-width="85"></div>
+                                            </div>
+                                            <div class="skill-level">85%</div>
+                                        </div>
+                                        <div class="skill-item">
+                                            <div class="skill-info">
+                                                <span class="skill-name">Metasploit</span>
+                                                <span class="skill-status advanced">ADVANCED</span>
+                                            </div>
+                                            <div class="skill-bar">
+                                                <div class="skill-progress" data-width="80"></div>
+                                            </div>
+                                            <div class="skill-level">80%</div>
+                                        </div>
+                                        <div class="skill-item">
+                                            <div class="skill-info">
+                                                <span class="skill-name">Wireshark</span>
+                                                <span class="skill-status proficient">PROFICIENT</span>
+                                            </div>
+                                            <div class="skill-bar">
+                                                <div class="skill-progress" data-width="75"></div>
+                                            </div>
+                                            <div class="skill-level">75%</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="arsenal-category">
+                                    <div class="category-header">SPECIALIZATIONS</div>
+                                    <div class="skill-items">
+                                        <div class="skill-item">
+                                            <div class="skill-info">
+                                                <span class="skill-name">OSINT</span>
+                                                <span class="skill-status specialist">SPECIALIST</span>
+                                            </div>
+                                            <div class="skill-bar">
+                                                <div class="skill-progress" data-width="90"></div>
+                                            </div>
+                                            <div class="skill-level">90%</div>
+                                        </div>
+                                        <div class="skill-item">
+                                            <div class="skill-info">
+                                                <span class="skill-name">VAPT</span>
+                                                <span class="skill-status specialist">SPECIALIST</span>
+                                            </div>
+                                            <div class="skill-bar">
+                                                <div class="skill-progress" data-width="85"></div>
+                                            </div>
+                                            <div class="skill-level">85%</div>
+                                        </div>
+                                        <div class="skill-item">
+                                            <div class="skill-info">
+                                                <span class="skill-name">Web Security</span>
+                                                <span class="skill-status advanced">ADVANCED</span>
+                                            </div>
+                                            <div class="skill-bar">
+                                                <div class="skill-progress" data-width="80"></div>
+                                            </div>
+                                            <div class="skill-level">80%</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="arsenal-category">
+                                    <div class="category-header">PLATFORMS</div>
+                                    <div class="skill-items">
+                                        <div class="skill-item">
+                                            <div class="skill-info">
+                                                <span class="skill-name">Kali Linux</span>
+                                                <span class="skill-status expert">EXPERT</span>
+                                            </div>
+                                            <div class="skill-bar">
+                                                <div class="skill-progress" data-width="90"></div>
+                                            </div>
+                                            <div class="skill-level">90%</div>
+                                        </div>
+                                        <div class="skill-item">
+                                            <div class="skill-info">
+                                                <span class="skill-name">Ubuntu/Debian</span>
+                                                <span class="skill-status advanced">ADVANCED</span>
+                                            </div>
+                                            <div class="skill-bar">
+                                                <div class="skill-progress" data-width="85"></div>
+                                            </div>
+                                            <div class="skill-level">85%</div>
+                                        </div>
+                                        <div class="skill-item">
+                                            <div class="skill-info">
+                                                <span class="skill-name">Windows</span>
+                                                <span class="skill-status advanced">ADVANCED</span>
+                                            </div>
+                                            <div class="skill-bar">
+                                                <div class="skill-progress" data-width="80"></div>
+                                            </div>
+                                            <div class="skill-level">80%</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Tools Section -->
+                <section id="tools" class="content-section">
+                    <div class="panel terminal">
+                        <div class="panel-header">
+                            <div class="window-controls">
+                                <div class="control close"></div>
+                                <div class="control minimize"></div>
+                                <div class="control maximize"></div>
+                            </div>
+                            <span class="panel-title">SECURITY TOOLS REPOSITORY</span>
+                        </div>
+                        <div class="panel-content">
+                            <div class="tools-grid">
+                                <div class="tool-card">
+                                    <div class="tool-header">
+                                        <div class="tool-id">PORT-SCANNER-v2.1</div>
+                                        <div class="tool-status operational">OPERATIONAL</div>
+                                    </div>
+                                    <div class="tool-body">
+                                        <div class="tool-name">Advanced Network Port Scanner</div>
+                                        <div class="tool-classification">CLASSIFICATION: NETWORK-RECON</div>
+                                        <div class="tool-description">
+                                            High-performance multi-threaded port scanning utility with advanced detection capabilities
+                                        </div>
+                                        <div class="tool-metrics">
+                                            <div class="metric">
+                                                <span class="metric-label">PERFORMANCE:</span>
+                                                <span class="metric-value">1200+ ports/min</span>
+                                            </div>
+                                            <div class="metric">
+                                                <span class="metric-label">EFFICIENCY:</span>
+                                                <span class="metric-value">50% improvement</span>
+                                            </div>
+                                        </div>
+                                        <div class="tool-tech">
+                                            <span class="tech-tag">Python</span>
+                                            <span class="tech-tag">Socket Programming</span>
+                                            <span class="tech-tag">Threading</span>
+                                        </div>
+                                        <div class="tool-actions">
+                                            <button class="tool-btn primary">EXECUTE</button>
+                                            <button class="tool-btn secondary">VIEW CODE</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="tool-card">
+                                    <div class="tool-header">
+                                        <div class="tool-id">WEB-RECON-v1.0</div>
+                                        <div class="tool-status deployed">DEPLOYED</div>
+                                    </div>
+                                    <div class="tool-body">
+                                        <div class="tool-name">Photography Portfolio Website</div>
+                                        <div class="tool-classification">CLASSIFICATION: WEB-DEVELOPMENT</div>
+                                        <div class="tool-description">
+                                            Professional web application with advanced frontend architecture
+                                        </div>
+                                        <div class="tool-metrics">
+                                            <div class="metric">
+                                                <span class="metric-label">ACCURACY:</span>
+                                                <span class="metric-value">95% pixel-perfect</span>
+                                            </div>
+                                            <div class="metric">
+                                                <span class="metric-label">TRAFFIC:</span>
+                                                <span class="metric-value">500+ visitors</span>
+                                            </div>
+                                        </div>
+                                        <div class="tool-tech">
+                                            <span class="tech-tag">HTML5</span>
+                                            <span class="tech-tag">CSS3</span>
+                                            <span class="tech-tag">JavaScript</span>
+                                        </div>
+                                        <div class="tool-actions">
+                                            <button class="tool-btn primary">LAUNCH</button>
+                                            <button class="tool-btn secondary">SOURCE</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="tool-card">
+                                    <div class="tool-header">
+                                        <div class="tool-id">UI-CLONE-v1.5</div>
+                                        <div class="tool-status operational">OPERATIONAL</div>
+                                    </div>
+                                    <div class="tool-body">
+                                        <div class="tool-name">Dribbble Interface Clone</div>
+                                        <div class="tool-classification">CLASSIFICATION: FRONTEND-DEV</div>
+                                        <div class="tool-description">
+                                            High-fidelity user interface replication with enhanced functionality
+                                        </div>
+                                        <div class="tool-metrics">
+                                            <div class="metric">
+                                                <span class="metric-label">FIDELITY:</span>
+                                                <span class="metric-value">90% accuracy</span>
+                                            </div>
+                                            <div class="metric">
+                                                <span class="metric-label">ENGAGEMENT:</span>
+                                                <span class="metric-value">100+ responses</span>
+                                            </div>
+                                        </div>
+                                        <div class="tool-tech">
+                                            <span class="tech-tag">HTML5</span>
+                                            <span class="tech-tag">Advanced CSS3</span>
+                                            <span class="tech-tag">JavaScript ES6</span>
+                                        </div>
+                                        <div class="tool-actions">
+                                            <button class="tool-btn primary">DEMO</button>
+                                            <button class="tool-btn secondary">INSPECT</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Intel Section -->
+                <section id="intel" class="content-section">
+                    <div class="panel terminal">
+                        <div class="panel-header">
+                            <div class="window-controls">
+                                <div class="control close"></div>
+                                <div class="control minimize"></div>
+                                <div class="control maximize"></div>
+                            </div>
+                            <span class="panel-title">THREAT INTELLIGENCE FEED</span>
+                        </div>
+                        <div class="panel-content">
+                            <div class="intel-feeds">
+                                <div class="feed-item">
+                                    <div class="feed-timestamp">[2024-08-21 18:00:42]</div>
+                                    <div class="feed-source">[OSINT-MONITOR]</div>
+                                    <div class="feed-message">New vulnerability CVE-2024-4567 detected in Apache HTTP Server</div>
+                                    <div class="feed-severity high">SEVERITY: HIGH</div>
+                                </div>
+                                <div class="feed-item">
+                                    <div class="feed-timestamp">[2024-08-21 17:58:21]</div>
+                                    <div class="feed-source">[NETWORK-SCAN]</div>
+                                    <div class="feed-message">Port scan completed: 65535 ports analyzed, 3 open services found</div>
+                                    <div class="feed-severity info">SEVERITY: INFO</div>
+                                </div>
+                                <div class="feed-item">
+                                    <div class="feed-timestamp">[2024-08-21 17:55:10]</div>
+                                    <div class="feed-source">[THREAT-INTEL]</div>
+                                    <div class="feed-message">Malware signature updated: 50 new threats added to database</div>
+                                    <div class="feed-severity medium">SEVERITY: MEDIUM</div>
+                                </div>
+                                <div class="feed-item">
+                                    <div class="feed-timestamp">[2024-08-21 17:52:33]</div>
+                                    <div class="feed-source">[HONEYPOT]</div>
+                                    <div class="feed-message">Suspicious connection attempt from 192.168.0.100</div>
+                                    <div class="feed-severity high">SEVERITY: HIGH</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Contact Section -->
+                <section id="contact" class="content-section">
+                    <div class="panel terminal">
+                        <div class="panel-header">
+                            <div class="window-controls">
+                                <div class="control close"></div>
+                                <div class="control minimize"></div>
+                                <div class="control maximize"></div>
+                            </div>
+                            <span class="panel-title">SECURE COMMUNICATION CHANNEL</span>
+                        </div>
+                        <div class="panel-content">
+                            <div class="contact-grid">
+                                <div class="contact-info">
+                                    <div class="info-section">
+                                        <div class="section-title">COMMUNICATION PROTOCOLS</div>
+                                        <div class="protocol-item">
+                                            <span class="protocol-label">SECURE_EMAIL:</span>
+                                            <span class="protocol-value">contactsarvesh24@gmail.com</span>
+                                            <button class="copy-btn" data-copy="contactsarvesh24@gmail.com">COPY</button>
+                                        </div>
+                                        <div class="protocol-item">
+                                            <span class="protocol-label">PHONE_SECURE:</span>
+                                            <span class="protocol-value">+91 7519440442</span>
+                                            <button class="copy-btn" data-copy="+91 7519440442">COPY</button>
+                                        </div>
+                                        <div class="protocol-item">
+                                            <span class="protocol-label">GEO_LOCATION:</span>
+                                            <span class="protocol-value">JAIPUR, INDIA</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="info-section">
+                                        <div class="section-title">OSINT SOURCES</div>
+                                        <div class="social-links">
+                                            <a href="https://www.linkedin.com/in/sarveshkumar0" target="_blank" class="social-link">
+                                                <span class="social-icon">IN</span>
+                                                <span class="social-text">LinkedIn</span>
+                                            </a>
+                                            <a href="https://github.com/sarveshkumar0" target="_blank" class="social-link">
+                                                <span class="social-icon">GH</span>
+                                                <span class="social-text">GitHub</span>
+                                            </a>
+                                            <a href="https://bugcrowd.com/sarveshkumar0" target="_blank" class="social-link">
+                                                <span class="social-icon">BC</span>
+                                                <span class="social-text">Bugcrowd</span>
+                                            </a>
+                                            <a href="https://tryhackme.com/p/sarveshkumar0" target="_blank" class="social-link">
+                                                <span class="social-icon">TH</span>
+                                                <span class="social-text">TryHackMe</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="contact-form-container">
+                                    <div class="form-title">ENCRYPTED MESSAGE TRANSMISSION</div>
+                                    <form id="contact-form" class="contact-form">
+                                        <div class="form-group">
+                                            <label class="form-label">SENDER_ID:</label>
+                                            <input type="text" id="name" name="name" class="form-control" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="form-label">EMAIL_ADDRESS:</label>
+                                            <input type="email" id="email" name="email" class="form-control" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="form-label">SUBJECT_LINE:</label>
+                                            <input type="text" id="subject" name="subject" class="form-control" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="form-label">MESSAGE_CONTENT:</label>
+                                            <textarea id="message" name="message" class="form-control" rows="5" required></textarea>
+                                        </div>
+                                        <button type="submit" class="form-submit">TRANSMIT MESSAGE</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+
+            <!-- Right Panel - Security Feeds -->
+            <aside class="right-panel">
+                <div class="panel terminal">
+                    <div class="panel-header">
+                        <div class="window-controls">
+                            <div class="control close"></div>
+                            <div class="control minimize"></div>
+                            <div class="control maximize"></div>
+                        </div>
+                        <span class="panel-title">LIVE SECURITY FEED</span>
+                    </div>
+                    <div class="panel-content">
+                        <div id="security-feed" class="security-feed">
+                            <!-- Live feed items will be populated by JavaScript -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel terminal">
+                    <div class="panel-header">
+                        <div class="window-controls">
+                            <div class="control close"></div>
+                            <div class="control minimize"></div>
+                            <div class="control maximize"></div>
+                        </div>
+                        <span class="panel-title">NETWORK STATUS</span>
+                    </div>
+                    <div class="panel-content">
+                        <div class="network-stats">
+                            <div class="stat">
+                                <div class="stat-label">FIREWALL:</div>
+                                <div class="stat-value active">ACTIVE</div>
+                            </div>
+                            <div class="stat">
+                                <div class="stat-label">IDS:</div>
+                                <div class="stat-value active">MONITORING</div>
+                            </div>
+                            <div class="stat">
+                                <div class="stat-label">VPN:</div>
+                                <div class="stat-value active">CONNECTED</div>
+                            </div>
+                            <div class="stat">
+                                <div class="stat-label">ENCRYPTION:</div>
+                                <div class="stat-value active">AES-256</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+        </div>
+
+        <!-- Command Line Interface -->
+        <div class="command-line">
+            <div class="command-prompt">
+                <span class="prompt-user">sarvesh@cybersec-workstation</span>
+                <span class="prompt-path">~</span>
+                <span class="prompt-symbol">$</span>
+                <input type="text" id="command-input" class="command-input" placeholder="Type 'help' for available commands..." autocomplete="off">
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
